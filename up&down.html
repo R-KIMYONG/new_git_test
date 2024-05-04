@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let correct = 78;
+        let count = 0
+        function solution() {
+            let answer = prompt("1~100사이의 숫자를 입력해라")
+
+            count++
+            if (answer < correct) {
+                alert('Down')
+            } else if (answer > correct) {
+                alert('Up')
+            } else if (answer == correct) {
+                alert('정답' + `총입력한횟수가 ${count}`)
+            }
+
+            solution()
+        }
+        solution()
+    </script>
+</body>
+
+</html>
